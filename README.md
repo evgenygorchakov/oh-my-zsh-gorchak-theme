@@ -14,7 +14,7 @@ git clone https://github.com/evgenygorchakov/oh-my-zsh-gorchak-theme.git ${ZSH_C
 ```
 
 ```zsh
-omz theme use gorchak/gorchak
+omz theme set gorchak/gorchak
 ```
 
 <img width="619" alt="image" src="https://user-images.githubusercontent.com/36595398/231958226-5de0adbb-c855-4742-ac7f-0a443e119e32.png">
