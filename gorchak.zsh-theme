@@ -1,17 +1,13 @@
-GREEN="%{$fg_bold[green]%}"
-RED="%{$fg_bold[red]%}"
-RESET="%{$reset_color%}"
-
 function node_prompt_version {
     if which node &> /dev/null; then
-        echo "$GREEN⬢ $(node -v) $RESET"
+        echo "n${FG[076]}⬢%{$reset_color%}de ${FG[076]}$(node -v) %{$reset_color%}"
     fi
 }
 
-PROMPT="%(?:${FG[075]}➜ :$RED➜ )"
-PROMPT+='${FG[075]}%c$RESET $(node_prompt_version)$(git_prompt_info)'
+PROMPT="%(?:🟢 :🔴 )"
+PROMPT+='${FG[075]}%c%{$reset_color%} $(node_prompt_version)$(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="${FG[078]}⌥ "
-ZSH_THEME_GIT_PROMPT_SUFFIX="$RESET "
-ZSH_THEME_GIT_PROMPT_DIRTY="${FG[214]} ✗$RESET"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}  "
+ZSH_THEME_GIT_PROMPT_DIRTY="${FG[214]} ✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
