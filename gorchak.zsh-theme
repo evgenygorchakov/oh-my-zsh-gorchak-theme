@@ -4,7 +4,7 @@ function node_prompt_version {
     fi
 }
 
-PROMPT="%(?:🟢 :🔴 )"
+PROMPT="%(?:🍐 :🍊 )"
 PROMPT+='${FG[075]}%c%{$reset_color%} $(node_prompt_version)$(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="${FG[078]}⌥ "
