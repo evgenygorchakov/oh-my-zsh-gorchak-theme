@@ -17,4 +17,10 @@ git clone https://github.com/evgenygorchakov/oh-my-zsh-gorchak-theme.git ${ZSH_C
 omz theme set gorchak/gorchak
 ```
 
-<img width="562" alt="image" src="https://user-images.githubusercontent.com/36595398/232041970-688a841c-09c0-4e8f-99a0-d3c2b2c882a8.png">
+### Uninstall
+
+```zsh
+rm -rf ${ZSH_CUSTOM}/themes/gorchak
+```
+
+<img width="518" alt="image" src="https://user-images.githubusercontent.com/36595398/232066407-6b484e58-9a61-473f-8fe8-95635d5c152b.png">
